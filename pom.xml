@@ -141,6 +141,7 @@
     </properties>
 
     <modules>
+        <module>subject</module>
         <module>lang</module>
         <module>crypto</module>
         <module>event</module>
@@ -940,6 +941,11 @@
     <dependencyManagement>
         <dependencies>
             <!-- Shiro core artifacts -->
+            <dependency>
+                <groupId>org.apache.shiro</groupId>
+                <artifactId>shiro-subject</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.shiro</groupId>
                 <artifactId>shiro-lang</artifactId>

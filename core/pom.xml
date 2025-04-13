@@ -81,10 +81,10 @@
                             org.apache.shiro.mgt;version=${project.version},
                             org.apache.shiro.realm*;version=${project.version},
                             org.apache.shiro.session*;version=${project.version},
-                            org.apache.shiro.subject*;version=${project.version},
                             org.apache.shiro.util;version=${project.version},
                         </Export-Package>
                         <Import-Package>
+                            org.apache.shiro.subject*;version=${project.version},
                             org.apache.shiro.lang*;version="${shiro.osgi.importRange}",
                             org.apache.shiro.cache*;version="${shiro.osgi.importRange}",
                             org.apache.shiro.config*;version="${shiro.osgi.importRange}",
@@ -110,6 +110,10 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-subject</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.apache.shiro</groupId>
             <artifactId>shiro-lang</artifactId>
